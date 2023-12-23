@@ -1,4 +1,19 @@
+
+#api routes
 Rails.application.routes.draw do
+  namespace :api do
+    resources :assemblies
+    resources :parts
+    resources :accounts
+    resources :suppliers
+    resources :authors
+    resources :books
+    
+  end
+  
+  
+  
+  # crud routes
   resources :assemblies
   resources :parts
   resources :accounts

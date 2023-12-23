@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_12_11_213625) do
+ActiveRecord::Schema[7.1].define(version: 2023_12_20_211042) do
   create_table "accounts", force: :cascade do |t|
     t.string "number"
     t.integer "supplier_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["supplier_id"], name: "index_accounts_on_supplier_id"
+  end
+
+  create_table "api_assemblies", force: :cascade do |t|
+    t.string "name"
+    t.integer "part_id", null: false
+    t.integer "book_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["book_id"], name: "index_api_assemblies_on_book_id"
+    t.index ["part_id"], name: "index_api_assemblies_on_part_id"
   end
 
   create_table "assemblies", force: :cascade do |t|
@@ -58,6 +68,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_11_213625) do
   end
 
   add_foreign_key "accounts", "suppliers"
+  add_foreign_key "api_assemblies", "books"
+  add_foreign_key "api_assemblies", "parts"
   add_foreign_key "assemblies", "books"
   add_foreign_key "assemblies", "parts"
   add_foreign_key "books", "authors"
