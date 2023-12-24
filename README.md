@@ -1,24 +1,16 @@
-# README
+bookstore
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+desenvolvido em Ruby on Rails . Este projeto consiste em um crud completo com api integrada relacionamento entre os dados e regras de implementação etc..
 
-Things you may want to cover:
+requisitos para rodar o projeto ,execute os seguintes comandos:
 
-* Ruby version
+Clone o repositório
 
-* System dependencies
+bundle install
 
-* Configuration
+rails db:migrate
 
-* Database creation
+rails server
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
