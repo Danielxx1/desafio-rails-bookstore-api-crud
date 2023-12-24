@@ -12,5 +12,7 @@ rails db:migrate
 
 rails server
 
+rr
+
 
 
