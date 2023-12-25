@@ -32,11 +32,10 @@
   - cadastrar montagens com varias peças e vinculado com livro
 
 --passo 3 ( criado regras e alterando informaçoes do banco de dados )
-  --Alterar:
-    - Adicionar campo CNPJ em fornecedor
-    - Adicionar campo Digito Verificador em Conta
-    - Adicionar campo ISBN em Livro
-    - Adicionar campo CPF em Author
+  - Adicionar campo CNPJ em fornecedor
+  - Adicionar campo Digito Verificador em Conta
+  - Adicionar campo ISBN em Livro
+  - Adicionar campo CPF em Author
   Calcular:
     - Digito Verificador em Conta
   Validar:
