@@ -31,7 +31,7 @@
   - cadastrar peças vinculao com fornecedor
   - cadastrar montagens com varias peças e vinculado com livro
 
--- passo 3 ( criado regras e alterando informaçoes do banco de dados )
+--passo 3 ( criado regras e alterando informaçoes do banco de dados )
   --Alterar:
     - Adicionar campo CNPJ em fornecedor
     - Adicionar campo Digito Verificador em Conta
@@ -43,7 +43,7 @@
     - CNPJ em Fornecedor
     - ISBN em Livro
     - CPF em 
--- Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
+--Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
   Adicionar:
     - Campo titulo em Livro
     - Campo nome em Peça
