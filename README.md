@@ -36,10 +36,10 @@
   - Adicionar campo Digito Verificador em Conta
   - Adicionar campo ISBN em Livro
   - Adicionar campo CPF em Author
-      - Digito Verificador em Conta
-        - CNPJ em Fornecedor
-        - ISBN em Livro
-        - CPF em Autor
+      - CALCULAR Digito Verificador em Conta
+        - VALIDAR CNPJ em Fornecedor
+        - VALIDAR ISBN em Livro
+        - VALIDAR CPF em Autor
 
 --Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
   - Campo titulo em Livro
