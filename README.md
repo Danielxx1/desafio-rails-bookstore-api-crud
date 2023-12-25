@@ -34,32 +34,32 @@ bookstore
 
 -- passo 3 ( criado regras e alterando informaçoes do banco de dados )
   --- Alterar:
-    -- Adicionar campo CNPJ em fornecedor
-    -- Adicionar campo Digito Verificador em Conta
-    -- Adicionar campo ISBN em Livro
-    -- Adicionar campo CPF em Author
+    - Adicionar campo CNPJ em fornecedor
+    - Adicionar campo Digito Verificador em Conta
+    - Adicionar campo ISBN em Livro
+    - Adicionar campo CPF em Author
   
   --- Calcular:
-    -- Digito Verificador em Conta
+    - Digito Verificador em Conta
 
   --- Validar:
-    -- CNPJ em Fornecedor
-    -- ISBN em Livro
-    -- CPF em 
+    - CNPJ em Fornecedor
+    - ISBN em Livro
+    - CPF em 
 
 -- Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
 
   --- Adicionar:
-    -- Campo titulo em Livro
-    -- Campo nome em Peça
+    - Campo titulo em Livro
+    - Campo nome em Peça
   
   --- Filtrar:
-    -- Fornecedor por nome
-    -- Fornecedor por numero da conta em conta
-    -- Livros por titulo
-    -- Livros por nome em Autor
-    -- Montagem por nome em Peça
-    -- Fornecedor por nome do Autor
+    - Fornecedor por nome
+    - Fornecedor por numero da conta em conta
+    - Livros por titulo
+    - Livros por nome em Autor
+    - Montagem por nome em Peça
+    - Fornecedor por nome do Autor
 
   
 
