@@ -42,14 +42,14 @@
         - VALIDAR CPF em Autor
 
 --Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
-  - Campo titulo em Livro
-  - Campo nome em Peça
-  - Fornecedor por nome
-  - Fornecedor por numero da conta em conta
-  - Livros por titulo
-  - Livros por nome em Autor
-  - Montagem por nome em Peça
-  - Fornecedor por nome do Autor
+  - ADICIONAR Campo titulo em Livro
+  - ADICIONAR Campo nome em Peça
+    - FILTRAR Fornecedor por nome
+    - FILTRAR Fornecedor por numero da conta em conta
+    - FILTRAR Livros por titulo
+    - FILTRAR Livros por nome em Autor
+    - FILTRAR Montagem por nome em Peça
+    - FILTRAR Fornecedor por nome do Autor
 
   
 
