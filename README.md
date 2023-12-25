@@ -43,11 +43,9 @@
     - ISBN em Livro
     - CPF em Autor
 
----Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
-  --Adicionar
+--Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
     - Campo titulo em Livro
     - Campo nome em Peça
-  --Filtrar
     - Fornecedor por nome
     - Fornecedor por numero da conta em conta
     - Livros por titulo
