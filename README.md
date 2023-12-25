@@ -44,14 +44,14 @@
     - CPF em Autor
 
 --Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
-    - Campo titulo em Livro
-    - Campo nome em Peça
-    - Fornecedor por nome
-    - Fornecedor por numero da conta em conta
-    - Livros por titulo
-    - Livros por nome em Autor
-    - Montagem por nome em Peça
-    - Fornecedor por nome do Autor
+  - Campo titulo em Livro
+  - Campo nome em Peça
+  - Fornecedor por nome
+  - Fornecedor por numero da conta em conta
+  - Livros por titulo
+  - Livros por nome em Autor
+  - Montagem por nome em Peça
+  - Fornecedor por nome do Autor
 
   
 
