@@ -1,9 +1,8 @@
-bookstore
+# bookstore
 
----desenvolvido em Ruby on Rails . Este projeto consiste em um crud completo com api integrada relacionamento entre os dados e regras de implementação etc..
-
--- versao do ruby: 3.2.2
--- versao do rails: 7.1.2
+---Desenvolvido em Ruby on Rails . Este projeto consiste em um crud completo com api integrada relacionamento entre os dados e regras de implementação etc..
+  - versao do ruby: 3.2.2
+  - versao do rails: 7.1.2
 
 
 ---requisitos para rodar o projeto ,execute os seguintes comandos:
@@ -33,27 +32,21 @@ bookstore
   - cadastrar montagens com varias peças e vinculado com livro
 
 -- passo 3 ( criado regras e alterando informaçoes do banco de dados )
-  
   Alterar:
     - Adicionar campo CNPJ em fornecedor
     - Adicionar campo Digito Verificador em Conta
     - Adicionar campo ISBN em Livro
     - Adicionar campo CPF em Author
-  
   Calcular:
     - Digito Verificador em Conta
-
   Validar:
     - CNPJ em Fornecedor
     - ISBN em Livro
     - CPF em 
-
 -- Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
-
   Adicionar:
     - Campo titulo em Livro
     - Campo nome em Peça
-  
   Filtrar:
     - Fornecedor por nome
     - Fornecedor por numero da conta em conta
