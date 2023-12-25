@@ -36,9 +36,9 @@
   - Adicionar campo Digito Verificador em Conta
   - Adicionar campo ISBN em Livro
   - Adicionar campo CPF em Author
-  Calcular:
+--Calcular:
     - Digito Verificador em Conta
-  Validar:
+--Validar:
     - CNPJ em Fornecedor
     - ISBN em Livro
     - CPF em Autor
@@ -46,7 +46,7 @@
   Adicionar:
     - Campo titulo em Livro
     - Campo nome em Peça
-  Filtrar:
+--Filtrar:
     - Fornecedor por nome
     - Fornecedor por numero da conta em conta
     - Livros por titulo
