@@ -36,7 +36,7 @@
   - Adicionar campo Digito Verificador em Conta
   - Adicionar campo ISBN em Livro
   - Adicionar campo CPF em Author
-Calcular
+-Calcular
     - Digito Verificador em Conta
 Validar
     - CNPJ em Fornecedor
