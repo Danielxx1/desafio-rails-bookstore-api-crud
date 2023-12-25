@@ -41,7 +41,7 @@
   Validar:
     - CNPJ em Fornecedor
     - ISBN em Livro
-    - CPF em 
+    - CPF em Autor
 --Passo 4 ( criaçao de filtros de pesquisas e adicionar novos campos )
   Adicionar:
     - Campo titulo em Livro
