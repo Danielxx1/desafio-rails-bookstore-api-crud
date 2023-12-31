@@ -1,4 +1,6 @@
+  
 class PartsController < ApplicationController
+
   before_action :set_part, only: %i[ show edit update destroy ]
 
   # GET /parts or /parts.json
@@ -26,10 +28,8 @@ class PartsController < ApplicationController
     respond_to do |format|
       if @part.save
         format.html { redirect_to part_url(@part), notice: "Part was successfully created." }
-        format.json { render :show, status: :created, location: @part }
       else
         format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @part.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -39,22 +39,17 @@ class PartsController < ApplicationController
     respond_to do |format|
       if @part.update(part_params)
         format.html { redirect_to part_url(@part), notice: "Part was successfully updated." }
-        format.json { render :show, status: :ok, location: @part }
       else
         format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @part.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /parts/1 or /parts/1.json
   def destroy
-    @part.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to parts_url, notice: "Part was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    @part.destroy
+    
+    redirect_to parts_url, notice: "Part was successfully destroyed."
   end
 
   private

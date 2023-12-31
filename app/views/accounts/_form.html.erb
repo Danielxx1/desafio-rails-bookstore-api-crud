@@ -21,6 +21,10 @@
     <%= form.collection_select :supplier_id, Supplier.all, :id, :name %>
   </div>
 
+  <div>
+    <%= form.label :digit, style: "display: block" %>
+    <%= form.text_field :digit %>
+  </div>
 
   <div>
     <%= form.submit %>

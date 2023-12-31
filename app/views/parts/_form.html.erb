@@ -17,9 +17,9 @@
   </div>
 
   <div>
-  <%= form.label :supplier_id, style: "display: block" %>
-  <%= form.select :supplier_id, Supplier.all.map { |s| [ s.name, s.id] } %>
-</div>
+    <%= form.label :supplier_id, style: "display: block" %>
+    <%= form.collection_select :supplier_id, Supplier.all, :id, :name %>
+  </div>
 
   <div>
     <%= form.submit %>

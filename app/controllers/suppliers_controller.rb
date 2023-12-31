@@ -1,4 +1,5 @@
 class SuppliersController < ApplicationController
+  
   before_action :set_supplier, only: %i[ show edit update destroy ]
 
   # GET /suppliers or /suppliers.json
@@ -8,6 +9,7 @@ class SuppliersController < ApplicationController
 
   # GET /suppliers/1 or /suppliers/1.json
   def show
+     @supplier = Supplier.includes(:account).find(params[:id])
   end
 
   # GET /suppliers/new
@@ -23,38 +25,28 @@ class SuppliersController < ApplicationController
   def create
     @supplier = Supplier.new(supplier_params)
 
-    respond_to do |format|
-      if @supplier.save
-        format.html { redirect_to supplier_url(@supplier), notice: "Supplier was successfully created." }
-        format.json { render :show, status: :created, location: @supplier }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @supplier.errors, status: :unprocessable_entity }
-      end
+    if @supplier.save
+      redirect_to supplier_url(@supplier), notice: "Supplier was successfully created."
+    else
+      render :new, status: :unprocessable_entity
     end
+
   end
 
   # PATCH/PUT /suppliers/1 or /suppliers/1.json
   def update
-    respond_to do |format|
-      if @supplier.update(supplier_params)
-        format.html { redirect_to supplier_url(@supplier), notice: "Supplier was successfully updated." }
-        format.json { render :show, status: :ok, location: @supplier }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @supplier.errors, status: :unprocessable_entity }
-      end
+    if @supplier.update(supplier_params)
+      redirect_to supplier_url(@supplier), notice: "Supplier was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
+  
 
   # DELETE /suppliers/1 or /suppliers/1.json
   def destroy
-    @supplier.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to suppliers_url, notice: "Supplier was successfully destroyed." }
-      format.json { head :no_content }
-    end
+    @supplier.destroy
+      redirect_to suppliers_url, notice: "Supplier was successfully destroyed."
   end
 
   private
@@ -65,6 +57,6 @@ class SuppliersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def supplier_params
-      params.require(:supplier).permit(:name)
+      params.require(:supplier).permit(:name, :cnpj)
     end
 end
